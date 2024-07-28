@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrolling Cards</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Fill the viewport height */
+            margin: 0;
+            padding: 20px; /* Add padding around the body */
+            box-sizing: border-box; /* Include padding in the element's total width and height */
+            background-color: #f0f0f0; /* Light background color */
+        }
+
+        .container {
+            position: relative;
+            overflow: hidden;
+            width: 50%; /* Set the width to 50% of the screen */
+            padding-top: 28.125%; /* Maintain 16:9 Aspect Ratio */
+            margin: auto; /* Center the container */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+            background-color: #fff; /* White background for better contrast */
+            border-radius: 8px; /* Rounded corners */
+        }
+        
+        /* Style the iframe to fit in the container div with full height and width */
+        .responsive-iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 200%; /* Increase width to simulate smaller screen */
+            height: 200%; /* Increase height to simulate smaller screen */
+            transform: scale(0.5); /* Scale down to 50% */
+            transform-origin: 0 0; /* Scale from top left corner */
+            border: none; /* Remove border from iframe */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <iframe class="responsive-iframe" src="https://oranos07.github.io/front-end/"></iframe>
+    </div> 
+</body>
+</html>
